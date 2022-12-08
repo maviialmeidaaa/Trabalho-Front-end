@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    height: 6rem;
+    width: 100%;
+}
+
+.header_root {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(110, 43, 226);
+    display: flex;
+    flex-direction: row;
+}
+
+.header_img {
+    height: 100%;
+    width: 40%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header_img a {
+    display: flex;
+    border-radius: 50%;
+}
+
+.header_img img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.header_img p {
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header_icons {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: end;
+}
+
+.header_icons i {
+    font-size: 2rem;
+    margin: 0 2rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.header_icons div {
+    background-color: transparent;
+}
+
+.header_icons i:hover {
+    color: white;
+}
+
+.container-root {
+    height: 1320px;
+    width: 100%;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.article_rectangle {
+    width: 100%;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.rectangle_header {
+    height: 100%;
+    width: 100%;
+}
+
+.rectangle_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rectangle_content img {
+    width: 20rem;
+    border: 1px solid black;
+}
+
+.container-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-left {
+    height: 100%;
+    width: 25%;
+    margin-right: 1rem;
+}
+
+.container-content-rectangle {
+    height: 100%;
+    width: 100%;
+    background: url('https://www.guiadoscuriosos.com.br/wp-content/uploads/2022/03/historia-copa-mundo.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.container-right {
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block-content-top {
+    height: 42%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.block-left, .block-right {
+    height: 100%;
+    width: 49%;
+}
+
+.block-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.block-left p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    font-weight: bold;
+    text-align: justify;
+    background-color: transparent;
+}
+
+.block-right img{
+    height: 100%;
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.block-content-down {
+    height: 57%;
+    width: 100%;
+}
+
+.grid-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-content {
+    margin: 0.1rem 0;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+.card-content img {
+    height: 100%;
+    width: 22%;
+    border: 1px solid black;
+}
+
+.card-content-text {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    }
+
+.card-content p {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: justify;
+}
+
+@media screen and (max-width: 700px) {
+    
+    .invisible {
+        display: none;
+    }
+
+    .visible {
+        display: all;
+    }
+
+    .header_img {
+        height: 100%;
+        width: 70%;
+    }
+
+    .header_img p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .rectangle_header {
+        background-color: transparent;
+    }
+
+    .rectangle_content {
+        background-color: transparent;
+    }
+
+    .rectangle_content img {
+        height: 100px;
+        width: 150px;
+    }
+
+    .container-root {
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .container-content {
+        height: 90rem;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: transparent;
+    }
+
+    .container-right {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: transparent;
+    }
+
+    .block-content-top {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .block-left, .block-right {
+        width: 100%;
+        background-color: transparent;
+    }
+    
+    .block-left {
+        height: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .block-left p {
+        margin: 1rem 0;
+        font-size: normal;
+        text-align: justify;
+        background-color: transparent;
+    }
+
+    .block-right {
+        height: 55%;
+    }
+
+    .block-right img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .block-content-down {
+        height: 50%;
+        width: 100%;
+        background-color:transparent;
+    }
+
+    .grid-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: transparent;
+    }
+    
+    .card-content {
+        margin: 0;
+        height: 25%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .card-content img {
+        height: 100%;
+        width: 30%;
+    }
+    
+    .card-content-text {
+        height: 100%;
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card-content p {
+        font-size: 12px;
+        background-color: transparent;
+        text-align: justify;
+    }
+}
